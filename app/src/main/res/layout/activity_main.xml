@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/flashcard_question"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:text="How many student in the class?" />
+
+
+    <TextView
+        android:id="@+id/flashcard_answer1"
+        android:layout_below="@id/flashcard_question"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textColor="@color/blue"
+        android:visibility="visible"
+        android:text="1- Twenty five" />
+
+    <TextView
+        android:id="@+id/flashcard_correction1"
+        android:layout_below="@id/flashcard_answer3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        android:textColor="@color/green"
+        android:text="Good Response" />
+
+    <TextView
+        android:id="@+id/flashcard_answer2"
+        android:layout_below="@id/flashcard_answer1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textColor="@color/blue"
+        android:text="2- Twenty" />
+
+    <TextView
+        android:id="@+id/flashcard_correction2"
+        android:layout_below="@id/flashcard_correction1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        android:textColor="@color/red"
+        android:text="Bad Response" />
+
+    <TextView
+        android:id="@+id/flashcard_answer3"
+        android:layout_below="@id/flashcard_answer2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:text="3- Thirty" />
+
+</RelativeLayout>
+
+
